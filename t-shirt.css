@@ -1,0 +1,58 @@
+body {
+  background-color: white;
+  margin: 40px;
+  font-family: 'Comfortaa', sans-serif;
+  color: #5ea5d8;
+}
+
+
+article {
+  /*
+  padding-bottom: 20px;
+  border: 1px solid #5ea5d8; */
+  margin: 20px;
+}
+
+
+article img {
+  width: 333px;
+  border: 2px solid #5ea5d8;
+  padding: 20px;
+
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  border: 1px solid #5ea5d8;
+  position: relative;
+  bottom: 5px;
+}
+
+footer .refresh, .favorite, .size, .color, .buy  {
+  border: 1px solid #5ea5d8;
+  padding: 15px 29.8px;
+
+}
+
+.refresh:hover {
+  background-color: #5ea5d8
+}
+
+.favorite:hover {
+  background-color: #5ea5d8
+}
+.size:hover {
+  background-color: #5ea5d8
+}
+.color:hover {
+  background-color: #5ea5d8
+}
+.buy:hover {
+  background-color: #5ea5d8
+}
