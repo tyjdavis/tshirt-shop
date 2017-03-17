@@ -36,12 +36,15 @@ footer {
   border: 2px solid #5ea5d8;
   position: relative;
   bottom: 5px;
+  width: 97.0%;
 }
 
 footer .refresh, .favorite, .size, .color, .buy  {
   border: 1px solid #5ea5d8;
   padding: 15px 7.27%;
 }
+
+
 
 .refresh:hover {
   background-color: #5ea5d8;
@@ -95,3 +98,29 @@ footer .refresh, .favorite, .size, .color, .buy  {
   background-color: #e4b177;
   border: 2px solid white;
 }
+
+.fa-rotate-right:before, .fa-repeat:before {
+    content: "\f01e";
+    position: relative;
+    bottom: -31px;
+    left: 339px;
+    border: 3px solid;
+    padding: 10px;
+}
+
+
+.spin {
+
+  border-left: 3px solid #5ea5d8;
+  border-right: 3px solid #5ea5d8;
+  position: relative;
+  bottom: 4px;
+}
+
+/*
+.fa:hover, .fa-repeat:hover {
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
+}
+*/
