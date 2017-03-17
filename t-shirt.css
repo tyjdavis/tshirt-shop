@@ -1,8 +1,10 @@
 body {
   background-color: white;
-  margin: 40px;
+  margin: 0px auto;
+  width: 100%;
   font-family: 'Comfortaa', sans-serif;
   color: #5ea5d8;
+  transform: scale(0.9);
 }
 
 
@@ -16,10 +18,12 @@ article {
 
 article img {
   width: 333px;
-  border: 2px solid #5ea5d8;
+  border: 3px solid #5ea5d8;
+  border-bottom: none;
   padding: 20px;
 
 }
+
 
 main {
   display: flex;
@@ -29,30 +33,65 @@ main {
 
 footer {
   display: flex;
-  border: 1px solid #5ea5d8;
+  border: 2px solid #5ea5d8;
   position: relative;
   bottom: 5px;
 }
 
 footer .refresh, .favorite, .size, .color, .buy  {
   border: 1px solid #5ea5d8;
-  padding: 15px 29.8px;
-
+  padding: 15px 7.27%;
 }
 
 .refresh:hover {
-  background-color: #5ea5d8
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
+
 }
 
 .favorite:hover {
-  background-color: #5ea5d8
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
 }
+
 .size:hover {
-  background-color: #5ea5d8
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
 }
+
 .color:hover {
-  background-color: #5ea5d8
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
+
 }
+
 .buy:hover {
-  background-color: #5ea5d8
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
+}
+
+#color1 {
+  width: 20px;
+  height: 20px;
+  background-color: #80bbe5;
+  border: 2px solid white;
+}
+
+#color2 {
+  width: 20px;
+  height: 20px;
+  background-color: #e276a7;
+  border: 2px solid white;
+}
+
+#color3 {
+  width: 20px;
+  height: 20px;
+  background-color: #e4b177;
+  border: 2px solid white;
 }
