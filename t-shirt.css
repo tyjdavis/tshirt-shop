@@ -128,7 +128,7 @@ footer .refresh, .favorite, .size, .color, .buy  {
 .size-box {
   visibility: hidden;
   width: 85px;
-  height: 150px;
+  height: 180px;
   position: absolute;
   border: 2px solid #5ea5d8;
   background-color: white;
@@ -156,4 +156,73 @@ footer .refresh, .favorite, .size, .color, .buy  {
 .color:hover .color-box {
   visibility: visible;
 
+}
+
+.size-box .XL {
+  border: none;
+  width: 42px;
+  height: 36px;
+}
+
+.size-box .L {
+  position: relative;
+  bottom: 50px;
+  left: 3px;
+  border: none;
+  width: 37px;
+  height: 31px;
+}
+
+.size-box .M {
+  position: relative;
+  bottom: 85px;
+  left: 5px;
+  border: none;
+  width: 32px;
+  height: 26px;
+}
+
+.size-box .S {
+  position: relative;
+  bottom: 118px;
+  left: 7px;
+  border: none;
+  width: 27px;
+  height: 21px;
+}
+
+.size-box .letterXL {
+  color: #5ea5d8;
+  position: relative;
+  bottom: 57px;
+  left: 35px;
+  border: none;
+  font-size: 0.5rem;
+}
+
+.size-box .letterL {
+  color: #5ea5d8;
+  position: relative;
+  bottom: 83px;
+  left: -38px;
+  border: none;
+  font-size: 0.4em;
+}
+
+.size-box .letterM {
+  color: #5ea5d8;
+  position: relative;
+  bottom: 114px;
+  left: -35px;
+  border: none;
+  font-size: 0.3em;
+}
+
+.size-box .letterS {
+  color: #5ea5d8;
+  position: relative;
+  bottom: 147px;
+  left: -30px;
+  border: none;
+  font-size: 0.2em;
 }
