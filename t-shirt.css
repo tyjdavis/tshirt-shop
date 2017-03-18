@@ -15,15 +15,12 @@ article {
   margin: 20px;
 }
 
-
 article img {
   width: 333px;
   border: 3px solid #5ea5d8;
   border-bottom: none;
   padding: 20px;
-
 }
-
 
 main {
   display: flex;
@@ -117,14 +114,6 @@ footer .refresh, .favorite, .size, .color, .buy  {
   bottom: 4px;
 }
 
-/*
-.fa:hover, .fa-repeat:hover {
-  background-color: #5ea5d8;
-  color: white;
-  cursor: pointer;
-}
-*/
-
 .size-box {
   visibility: hidden;
   width: 85px;
@@ -139,7 +128,6 @@ footer .refresh, .favorite, .size, .color, .buy  {
 
 .size:hover .size-box {
   visibility: visible;
-
 }
 
 .color-box {
@@ -155,7 +143,6 @@ footer .refresh, .favorite, .size, .color, .buy  {
 
 .color:hover .color-box {
   visibility: visible;
-
 }
 
 .size-box .XL {
@@ -225,4 +212,32 @@ footer .refresh, .favorite, .size, .color, .buy  {
   left: -30px;
   border: none;
   font-size: 0.2em;
+}
+
+.color-box .blue-option {
+  position: absolute;;
+  top: 10px;
+  left: 10px;
+  color: #80bbe5;
+}
+
+.color-box .pink-option {
+  position: absolute;;
+  top: 10px;
+  left: 50px;
+  color: #d48299;
+}
+
+.color-box .orange-option {
+  position: absolute;;
+  top: 47px;
+  left: 10px;
+  color: #dcb07d;
+}
+
+.color-box .green-option {
+  position: absolute;;
+  top: 47px;
+  left: 50px;
+  color: #8bb992;
 }
