@@ -41,7 +41,14 @@ footer .refresh, .favorite, .size, .color, .buy  {
   padding: 15px 7.27%;
 }
 
+p {
+  font-size: 1.5rem;
+}
 
+section p .price {
+  position: fixed;
+  left: 350px;
+}
 
 .refresh:hover {
   background-color: #5ea5d8;
@@ -115,7 +122,7 @@ footer .refresh, .favorite, .size, .color, .buy  {
 }
 
 .size-box {
-  visibility: hidden;
+  opacity: 0.0;
   width: 85px;
   height: 180px;
   position: absolute;
@@ -123,15 +130,17 @@ footer .refresh, .favorite, .size, .color, .buy  {
   background-color: white;
   bottom: 58px;
   right: 147px;
+  opacity: 0.0;
 
 }
 
 .size:hover .size-box {
-  visibility: visible;
+  transition-duration: 0.5s;
+  opacity: 1.0;
 }
 
 .color-box {
-  visibility: hidden;
+  opacity: 0.0;
   width: 88px;
   height: 88px;
   position: absolute;
@@ -142,7 +151,8 @@ footer .refresh, .favorite, .size, .color, .buy  {
 }
 
 .color:hover .color-box {
-  visibility: visible;
+  transition-duration: 0.5s;
+  opacity: 1.0;
 }
 
 .size-box .XL {
