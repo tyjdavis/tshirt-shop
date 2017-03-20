@@ -1,4 +1,4 @@
-body {
+main {
   background-color: white;
   margin: 0px auto;
   width: 100%;
@@ -28,14 +28,19 @@ footer {
   display: flex;
   border: 2px solid #5ea5d8;
   position: relative;
-  bottom: 6px;
+  margin: 0rem;
+  bottom: 7px;
   left: 44.4px;
-  width: 87.4%;
+  width: 342px;
 }
 
 footer .refresh, .favorite, .size, .color, .buy  {
+  display: inline-block;
+  width: 20%;
   border: 1px solid #5ea5d8;
-  padding: 15px 7.12%;
+  padding: 15px 24px;
+
+
 }
 
  p {
@@ -102,7 +107,7 @@ section p .price {
   border: 2px solid white;
 }
 
-.fa-rotate-right:before, .fa-repeat:before {
+.fa-repeat:before {
     content: "\f01e";
     position: relative;
     bottom: 305px;
@@ -128,7 +133,6 @@ section p .price {
   bottom: 58px;
   right: 127px;
   opacity: 0.0;
-
 }
 
 .size:hover .size-box {
