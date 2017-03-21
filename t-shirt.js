@@ -138,20 +138,38 @@ colorGreen[2].addEventListener('click', clickColorGreen3);
 //Shopping Cart
 
 function buy1() {
-  let list = document.createElement ("li");
-  let shirt = document.createTextNode ("Save my Trees $29");
-  console.log("Save my Trees $29");
+  let ul = document.querySelector(".cart");
+  let li = document.createElement("li");
+  li.textContent = "Save my Trees $29";
+  ul.appendChild(li);
 }
 
 function buy2() {
-  console.log("Nature Lover $19");
+  let ul = document.querySelector(".cart");
+  let li = document.createElement("li");
+  li.textContent = "Nature Lover $19";
+  ul.appendChild(li);
 }
 
 function buy3() {
-  console.log("Forrest Walk $39");
+  let ul = document.querySelector(".cart");
+  let li = document.createElement("li");
+  li.textContent = "Forrest Walk $39";
+  ul.appendChild(li);
 }
 
-let buyFirst = document.querySelectorAll(".buy");
-buyFirst[0].addEventListener('click', buy1);
-buyFirst[1].addEventListener('click', buy2);
-buyFirst[2].addEventListener('click', buy3);
+let buyShirt = document.querySelectorAll(".buy");
+buyShirt[0].addEventListener('click', buy1);
+buyShirt[1].addEventListener('click', buy2);
+buyShirt[2].addEventListener('click', buy3);
+
+
+
+/*
+function cartTotal() {
+  let
+}
+
+let buyShirt = document.querySelectorAll("");
+buyShirt[0].addEventListener('click', );
+*/
