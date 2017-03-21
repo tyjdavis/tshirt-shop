@@ -40,8 +40,24 @@ function clickSizeS(event) {
 
 //Color Selector
 
+/* function clickColorBlue(event) {
+  let myImage = document.querySelectorAll('img');
+  myImage[0].src = "shirts/blue-front.png";
+  }
+
 function clickColorBlue(event) {
-  event.target.parentElement.parentElement.imageContent src= "shirts/blue-front.png";
+  let myImage = document.querySelectorAll('img');
+  myImage[1].src = "shirts/blue-front.png";
+  }
+
+function clickColorBlue(event) {
+  let myImage = document.querySelectorAll('img');
+  myImage[2].src = "shirts/blue-front.png";
+  } */
+
+function clickColorBlue(event) {
+  let myImage = document.querySelector('img');
+  myImage.src = "shirts/blue-front.png";
   }
 
   let colorBlue = document.querySelectorAll('.blue-option');
@@ -49,8 +65,10 @@ function clickColorBlue(event) {
   colorBlue[1].addEventListener('click', clickColorBlue);
   colorBlue[2].addEventListener('click', clickColorBlue);
 
+
 function clickColorPink(event) {
-  event.target.parentElement.parentElement.lastElementChild.imageContent= "XL";
+  let myImage = document.querySelector('img');
+  myImage.src = "shirts/pink-front.png";
   }
 
   let colorPink = document.querySelectorAll('.pink-option');
@@ -59,7 +77,8 @@ function clickColorPink(event) {
   colorPink[2].addEventListener('click', clickColorPink);
 
 function clickColorOrange(event) {
-  event.target.parentElement.parentElement.lastElementChild.imageContent= "XL";
+  let myImage = document.querySelector('img');
+  myImage.src = "shirts/yellow-front.png";
   }
 
   let colorOrange = document.querySelectorAll('.orange-option');
@@ -68,7 +87,8 @@ function clickColorOrange(event) {
   colorOrange[2].addEventListener('click', clickColorOrange);
 
 function clickColorGreen(event) {
-  event.target.parentElement.parentElement.lastElementChild.imageContent= "XL";
+  let myImage = document.querySelector('img');
+  myImage.src = "shirts/green-front.png";
   }
 
   let colorGreen = document.querySelectorAll('.green-option');
