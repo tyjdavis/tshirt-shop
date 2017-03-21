@@ -1,3 +1,5 @@
+//Size Selector
+
 function clickSizeXL(event) {
   event.target.parentElement.parentElement.lastElementChild.textContent= "XL";
 }
@@ -36,13 +38,60 @@ function clickSizeS(event) {
     sizeS[2].addEventListener('click', clickSizeS);
 
 
+//Color Selector
 
+/* function clickColorBlue(event) {
+  let myImage = document.querySelectorAll('img');
+  myImage[0].src = "shirts/blue-front.png";
+  }
 
 function clickColorBlue(event) {
-  event.target.parentElement.parentElement.lastElementChild.textContent= "XL";
+  let myImage = document.querySelectorAll('img');
+  myImage[1].src = "shirts/blue-front.png";
+  }
+
+function clickColorBlue(event) {
+  let myImage = document.querySelectorAll('img');
+  myImage[2].src = "shirts/blue-front.png";
+  } */
+
+function clickColorBlue(event) {
+  let myImage = document.querySelector('img');
+  myImage.src = "shirts/blue-front.png";
   }
 
   let colorBlue = document.querySelectorAll('.blue-option');
   colorBlue[0].addEventListener('click', clickColorBlue);
   colorBlue[1].addEventListener('click', clickColorBlue);
   colorBlue[2].addEventListener('click', clickColorBlue);
+
+
+function clickColorPink(event) {
+  let myImage = document.querySelector('img');
+  myImage.src = "shirts/pink-front.png";
+  }
+
+  let colorPink = document.querySelectorAll('.pink-option');
+  colorPink[0].addEventListener('click', clickColorPink);
+  colorPink[1].addEventListener('click', clickColorPink);
+  colorPink[2].addEventListener('click', clickColorPink);
+
+function clickColorOrange(event) {
+  let myImage = document.querySelector('img');
+  myImage.src = "shirts/yellow-front.png";
+  }
+
+  let colorOrange = document.querySelectorAll('.orange-option');
+  colorOrange[0].addEventListener('click', clickColorOrange);
+  colorOrange[1].addEventListener('click', clickColorOrange);
+  colorOrange[2].addEventListener('click', clickColorOrange);
+
+function clickColorGreen(event) {
+  let myImage = document.querySelector('img');
+  myImage.src = "shirts/green-front.png";
+  }
+
+  let colorGreen = document.querySelectorAll('.green-option');
+  colorGreen[0].addEventListener('click', clickColorGreen);
+  colorGreen[1].addEventListener('click', clickColorGreen);
+  colorGreen[2].addEventListener('click', clickColorGreen);
