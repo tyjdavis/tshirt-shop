@@ -187,16 +187,18 @@ buyShirt[2].addEventListener('click', buy3);
 
 //Updating price in shopping cart
 
-function cartAdd() {
+function cartAdd(event) {
   let placeHolder = document.getElementById("total").textContent;
-  let pickle = parseInt(placeHolder);
-  let totalNumber = pickle;
-  let placeHolder1 = document.getElementsByClassName("price").textContent;
-  let pickle1 = parseInt(placeHolder1[0]);
-  let shirtCost = pickle1;
+  let totalNumber = parseInt(placeHolder);
+  //let totalNumber = pickle;
+  let placeHolder1 = event.target.parentElement.nextElementSibling.querySelector(".price").textContent;
+  let shirtCost = parseInt(placeHolder1);
+  //let shirtCost = pickle1;
   totalNumber = totalNumber + shirtCost;
   total.textContent = totalNumber;
 }
 
-let cartTotal = document.querySelector(".buy");
-cartTotal.addEventListener('click', cartAdd);
+let cartTotal = document.querySelectorAll(".buy");
+cartTotal[0].addEventListener('click', cartAdd);
+cartTotal[1].addEventListener('click', cartAdd);
+cartTotal[2].addEventListener('click', cartAdd);
