@@ -6,9 +6,15 @@ function clickSizeXL(event) {
 }
 
 let sizeXL = document.querySelectorAll('.XL');
-  sizeXL[0].addEventListener('click', clickSizeXL);
-  sizeXL[1].addEventListener('click', clickSizeXL);
-  sizeXL[2].addEventListener('click', clickSizeXL);
+for (i=0; i < sizeXL.length; i++) {
+  sizeXL[i].addEventListener('click', clickSizeXL);
+}
+
+//another way to do it instead of for loop
+
+/*  sizeXL[0].addEventListener('click', clickSizeXL);
+    sizeXL[1].addEventListener('click', clickSizeXL);
+    sizeXL[2].addEventListener('click', clickSizeXL); */
 
 
 function clickSizeL(event) {
@@ -16,27 +22,42 @@ function clickSizeL(event) {
 }
 
   let sizeL = document.querySelectorAll('.L');
-    sizeL[0].addEventListener('click', clickSizeL);
-    sizeL[1].addEventListener('click', clickSizeL);
-    sizeL[2].addEventListener('click', clickSizeL);
+  for (i = 0; i < sizeL.length; i++) {
+    sizeL[i].addEventListener('click', clickSizeL);
+  }
+
+
+  /*  sizeL[0].addEventListener('click', clickSizeL);
+      sizeL[1].addEventListener('click', clickSizeL);
+      sizeL[2].addEventListener('click', clickSizeL); */
 
 
 function clickSizeM(event) {
   event.target.parentElement.parentElement.lastElementChild.textContent= "M";
 }
   let sizeM = document.querySelectorAll('.M');
-    sizeM[0].addEventListener('click', clickSizeM);
+  for (i = 0; i < sizeM.length; i++) {
+  sizeM[i].addEventListener('click', clickSizeM);
+}
+
+
+/*  sizeM[0].addEventListener('click', clickSizeM);
     sizeM[1].addEventListener('click', clickSizeM);
-    sizeM[2].addEventListener('click', clickSizeM);
+    sizeM[2].addEventListener('click', clickSizeM); */
 
 
 function clickSizeS(event) {
   event.target.parentElement.parentElement.lastElementChild.textContent= "S";
 }
   let sizeS = document.querySelectorAll('.S');
-    sizeS[0].addEventListener('click', clickSizeS);
+  for (i = 0; i < sizeS.length; i++) {
+  sizeS[i].addEventListener('click', clickSizeS);
+  }
+
+
+/*  sizeS[0].addEventListener('click', clickSizeS);
     sizeS[1].addEventListener('click', clickSizeS);
-    sizeS[2].addEventListener('click', clickSizeS);
+    sizeS[2].addEventListener('click', clickSizeS); */
 
 
 //Color Selector
@@ -164,13 +185,14 @@ buyShirt[1].addEventListener('click', buy2);
 buyShirt[2].addEventListener('click', buy3);
 
 
+//Updating price in shopping cart
 
 function cartAdd() {
   let placeHolder = document.getElementById("total").textContent;
-  let pickle = parseInt("placeHolder", 10);
+  let pickle = parseInt(placeHolder);
   let totalNumber = pickle;
   let placeHolder1 = document.getElementsByClassName("price").textContent;
-  let pickle1 = parseInt("placeHolder1", 10);
+  let pickle1 = parseInt(placeHolder1[0]);
   let shirtCost = pickle1;
   totalNumber = totalNumber + shirtCost;
   total.textContent = totalNumber;
