@@ -253,10 +253,7 @@ section p .price {
   color: #8bb992;
 }
 
-/*
-@media (max-width: 1000px)  {
-  #container {
-    display: inline-block;
-    float: left;
-  }
+.shopping-cart {
+  position: relative;;
+  top: 100px;
 }
