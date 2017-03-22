@@ -190,15 +190,52 @@ buyShirt[2].addEventListener('click', buy3);
 function cartAdd(event) {
   let placeHolder = document.getElementById("total").textContent;
   let totalNumber = parseInt(placeHolder);
-  //let totalNumber = pickle;
   let placeHolder1 = event.target.parentElement.nextElementSibling.querySelector(".price").textContent;
   let shirtCost = parseInt(placeHolder1);
-  //let shirtCost = pickle1;
   totalNumber = totalNumber + shirtCost;
   total.textContent = totalNumber;
+  cartLimit(event);
+
 }
 
 let cartTotal = document.querySelectorAll(".buy");
-cartTotal[0].addEventListener('click', cartAdd);
-cartTotal[1].addEventListener('click', cartAdd);
-cartTotal[2].addEventListener('click', cartAdd);
+for (i = 0; i < cartTotal.length; i++) {
+  cartTotal[i].addEventListener('click', cartAdd);
+  }
+
+
+
+
+let saveShirt = 0;
+let natureShirt = 0;
+let forrestShirt = 0;
+
+
+function cartLimit (event) {
+
+  let cartIcon = event.target;
+  let shirt = cartIcon.dataset.shirt;
+
+      if (shirt === "Save my Trees") {
+        saveShirt++;
+        if (saveShirt >= 8) {
+
+          console.log("stop");
+          //cartAdd().disabled = true;
+        }
+      } else if (shirt === "Nature Lover") {
+        natureShirt++;
+        if (natureShirt >= 8) {
+
+          console.log("stop2");
+          //cartIcon.disabled = true;
+        }
+      } else {
+        forrestShirt++;
+        if (forrestShirt >= 8) {
+
+          console.log("stop3");
+          //cartIcon.disabled = true;
+        }
+      }
+    }
