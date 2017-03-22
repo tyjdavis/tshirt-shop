@@ -185,6 +185,8 @@ buyShirt[1].addEventListener('click', buy2);
 buyShirt[2].addEventListener('click', buy3);
 
 
+
+
 //Updating price in shopping cart
 
 function cartAdd(event) {
@@ -195,21 +197,20 @@ function cartAdd(event) {
   totalNumber = totalNumber + shirtCost;
   total.textContent = totalNumber;
   cartLimit(event);
-
 }
+
 
 let cartTotal = document.querySelectorAll(".buy");
 for (i = 0; i < cartTotal.length; i++) {
-  cartTotal[i].addEventListener('click', cartAdd);
-  }
+cartTotal[i].addEventListener('click', cartAdd);
+}
 
 
-
+//Limit of 5 of each individual shirt
 
 let saveShirt = 0;
 let natureShirt = 0;
 let forrestShirt = 0;
-
 
 function cartLimit (event) {
 
@@ -237,5 +238,17 @@ function cartLimit (event) {
           console.log("stop3");
           //cartIcon.disabled = true;
         }
+      }
+    }
+
+
+
+
+    let shirtCounter = 0;
+
+    function cartDiscount (event) {
+
+      if (cartTotal >= 5) {
+        console.log("discount");
       }
     }
