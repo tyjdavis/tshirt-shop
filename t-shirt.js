@@ -165,11 +165,16 @@ buyShirt[2].addEventListener('click', buy3);
 
 
 
-/*
-function cartTotal() {
-  let
+function cartAdd() {
+  let placeHolder = document.getElementById("total").textContent;
+  let pickle = parseInt("placeHolder", 10);
+  let totalNumber = pickle;
+  let placeHolder1 = document.getElementsByClassName("price").textContent;
+  let pickle1 = parseInt("placeHolder1", 10);
+  let shirtCost = pickle1;
+  totalNumber = totalNumber + shirtCost;
+  total.textContent = totalNumber;
 }
 
-let buyShirt = document.querySelectorAll("");
-buyShirt[0].addEventListener('click', );
-*/
+let cartTotal = document.querySelector(".buy");
+cartTotal.addEventListener('click', cartAdd);
