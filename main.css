@@ -122,7 +122,6 @@ section p .price {
 }
 
 .size-box {
-  opacity: 0.0;
   width: 85px;
   height: 180px;
   position: absolute;
@@ -252,8 +251,8 @@ section p .price {
 }
 
 .shopping-cart {
-  position: relative;;
-  top: 100px;
+  position: absolute;
+  top: 500px;
 }
 
 #sold1 {

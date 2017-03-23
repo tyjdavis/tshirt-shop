@@ -1,5 +1,5 @@
-//Size Selector
 
+//Size Selector
 
 function clickSizeXL(event) {
   event.target.parentElement.parentElement.lastElementChild.textContent= "XL";
@@ -20,16 +20,10 @@ for (i=0; i < sizeXL.length; i++) {
 function clickSizeL(event) {
   event.target.parentElement.parentElement.lastElementChild.textContent= "L";
 }
-
   let sizeL = document.querySelectorAll('.L');
   for (i = 0; i < sizeL.length; i++) {
     sizeL[i].addEventListener('click', clickSizeL);
   }
-
-
-  /*  sizeL[0].addEventListener('click', clickSizeL);
-      sizeL[1].addEventListener('click', clickSizeL);
-      sizeL[2].addEventListener('click', clickSizeL); */
 
 
 function clickSizeM(event) {
@@ -38,12 +32,7 @@ function clickSizeM(event) {
   let sizeM = document.querySelectorAll('.M');
   for (i = 0; i < sizeM.length; i++) {
   sizeM[i].addEventListener('click', clickSizeM);
-}
-
-
-/*  sizeM[0].addEventListener('click', clickSizeM);
-    sizeM[1].addEventListener('click', clickSizeM);
-    sizeM[2].addEventListener('click', clickSizeM); */
+  }
 
 
 function clickSizeS(event) {
@@ -55,13 +44,8 @@ function clickSizeS(event) {
   }
 
 
-/*  sizeS[0].addEventListener('click', clickSizeS);
-    sizeS[1].addEventListener('click', clickSizeS);
-    sizeS[2].addEventListener('click', clickSizeS); */
-
 
 //Color Selector
-
 
 //Blue Color
 
@@ -84,6 +68,7 @@ let colorBlue = document.querySelectorAll('.blue-option');
 colorBlue[0].addEventListener('click', clickColorBlue1);
 colorBlue[1].addEventListener('click', clickColorBlue2);
 colorBlue[2].addEventListener('click', clickColorBlue3);
+
 
 
 //Pink Color
@@ -109,6 +94,7 @@ colorPink[1].addEventListener('click', clickColorPink2);
 colorPink[2].addEventListener('click', clickColorPink3);
 
 
+
 //Orange Color
 
 function clickColorOrange1() {
@@ -130,6 +116,7 @@ let colorOrange = document.querySelectorAll('.orange-option');
 colorOrange[0].addEventListener('click', clickColorOrange1);
 colorOrange[1].addEventListener('click', clickColorOrange2);
 colorOrange[2].addEventListener('click', clickColorOrange3);
+
 
 
 //Green Color
@@ -186,7 +173,6 @@ buyShirt[2].addEventListener('click', buy3);
 
 
 
-
 //Updating price in shopping cart
 
 function cartAdd(event) {
@@ -196,7 +182,7 @@ function cartAdd(event) {
   let shirtCost = parseInt(placeHolder1);
   totalNumber = totalNumber + shirtCost;
   total.textContent = totalNumber;
-  cartLimit(event);
+  cartLimit();
 }
 
 
@@ -206,13 +192,14 @@ cartTotal[i].addEventListener('click', cartAdd);
 }
 
 
+
 //Limit of 5 of each individual shirt
 
 let saveShirt = 0;
 let natureShirt = 0;
 let forrestShirt = 0;
 
-function cartLimit (event) {
+function cartLimit () {
 
   let cartIcon = event.target;
   let shirt = cartIcon.dataset.shirt;
@@ -239,12 +226,15 @@ function cartLimit (event) {
 
 
 
+//5% discount after five or more shirts
 
-    let shirtCounter = 0;
+//work in progress
 
-    function cartDiscount (event) {
+let shirtCounter = 0;
 
-      if (cartTotal >= 5) {
-        console.log("discount");
-      }
-    }
+function cartDiscount (event) {
+
+  if (cartAdd() >= 5) {
+    console.log("discount");
+  }
+}
