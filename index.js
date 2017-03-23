@@ -217,29 +217,25 @@ function cartLimit (event) {
   let cartIcon = event.target;
   let shirt = cartIcon.dataset.shirt;
 
-      if (shirt === "Save my Trees") {
-        saveShirt++;
-        if (saveShirt >= 8) {
-
-          console.log("stop");
-          //cartAdd().disabled = true;
-        }
-      } else if (shirt === "Nature Lover") {
-        natureShirt++;
-        if (natureShirt >= 8) {
-
-          console.log("stop2");
-          //cartIcon.disabled = true;
-        }
-      } else {
-        forrestShirt++;
-        if (forrestShirt >= 8) {
-
-          console.log("stop3");
-          //cartIcon.disabled = true;
-        }
-      }
+  if (shirt === "Save my Trees") {
+    saveShirt++;
+    if (saveShirt >= 8) {
+      sold1.style.display ='block';
     }
+
+  } else if (shirt === "Nature Lover") {
+    natureShirt++;
+    if (natureShirt >= 8) {
+      sold2.style.display ='block';
+  }
+
+  } else {
+    forrestShirt++;
+    if (forrestShirt >= 8) {
+      sold3.style.display ='block';
+    }
+  }
+}
 
 
 
