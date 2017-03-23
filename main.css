@@ -223,28 +223,28 @@ section p .price {
 }
 
 .color-box .blue-option {
-  position: absolute;;
+  position: absolute;
   top: 10px;
   left: 10px;
   color: #80bbe5;
 }
 
 .color-box .pink-option {
-  position: absolute;;
+  position: absolute;
   top: 10px;
   left: 50px;
   color: #d48299;
 }
 
 .color-box .orange-option {
-  position: absolute;;
+  position: absolute;
   top: 47px;
   left: 10px;
   color: #dcb07d;
 }
 
 .color-box .green-option {
-  position: absolute;;
+  position: absolute;
   top: 47px;
   left: 50px;
   color: #8bb992;
