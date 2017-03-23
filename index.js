@@ -52,16 +52,22 @@ function clickSizeS(event) {
 function clickColorBlue1() {
   let myImage = document.querySelector('img.first');
   myImage.src = "shirts/blue-front.png";
+  let colorBox = document.querySelector('#color1');
+  colorBox.style.backgroundColor = "#80bbe5";
   }
 
 function clickColorBlue2() {
   let myImage = document.querySelector('img.second');
   myImage.src = "shirts/blue-front.png";
+  let colorBox = document.querySelector('#color2');
+  colorBox.style.backgroundColor = "#80bbe5";
   }
 
 function clickColorBlue3() {
   let myImage = document.querySelector('img.third');
   myImage.src = "shirts/blue-front.png";
+  let colorBox = document.querySelector('#color3');
+  colorBox.style.backgroundColor = "#80bbe5";
   }
 
 let colorBlue = document.querySelectorAll('.blue-option');
@@ -76,16 +82,22 @@ colorBlue[2].addEventListener('click', clickColorBlue3);
 function clickColorPink1() {
   let myImage = document.querySelector('img.first');
   myImage.src = "shirts/pink-front.png";
+  let colorBox = document.querySelector('#color1');
+  colorBox.style.backgroundColor = "#e276a7";
   }
 
 function clickColorPink2() {
   let myImage = document.querySelector('img.second');
   myImage.src = "shirts/pink-front.png";
+  let colorBox = document.querySelector('#color2');
+  colorBox.style.backgroundColor = "#e276a7";
   }
 
 function clickColorPink3() {
   let myImage = document.querySelector('img.third');
   myImage.src = "shirts/pink-front.png";
+  let colorBox = document.querySelector('#color3');
+  colorBox.style.backgroundColor = "#e276a7";
   }
 
 let colorPink = document.querySelectorAll('.pink-option');
@@ -100,16 +112,22 @@ colorPink[2].addEventListener('click', clickColorPink3);
 function clickColorOrange1() {
   let myImage = document.querySelector('img.first');
   myImage.src = "shirts/yellow-front.png";
+  let colorBox = document.querySelector('#color1');
+  colorBox.style.backgroundColor = "#e4b177";
   }
 
 function clickColorOrange2() {
   let myImage = document.querySelector('img.second');
   myImage.src = "shirts/yellow-front.png";
+  let colorBox = document.querySelector('#color2');
+  colorBox.style.backgroundColor = "#e4b177";
   }
 
 function clickColorOrange3() {
   let myImage = document.querySelector('img.third');
   myImage.src = "shirts/yellow-front.png";
+  let colorBox = document.querySelector('#color3');
+  colorBox.style.backgroundColor = "#e4b177";
   }
 
 let colorOrange = document.querySelectorAll('.orange-option');
@@ -124,16 +142,22 @@ colorOrange[2].addEventListener('click', clickColorOrange3);
 function clickColorGreen1() {
   let myImage = document.querySelector('img.first');
   myImage.src = "shirts/green-front.png";
+  let colorBox = document.querySelector('#color1');
+  colorBox.style.backgroundColor = "#8bb992";
   }
 
 function clickColorGreen2() {
   let myImage = document.querySelector('img.second');
   myImage.src = "shirts/green-front.png";
+  let colorBox = document.querySelector('#color2');
+  colorBox.style.backgroundColor = "#8bb992";
   }
 
 function clickColorGreen3() {
   let myImage = document.querySelector('img.third');
   myImage.src = "shirts/green-front.png";
+  let colorBox = document.querySelector('#color3');
+  colorBox.style.backgroundColor = "#8bb992";
   }
 
 let colorGreen = document.querySelectorAll('.green-option');
