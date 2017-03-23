@@ -39,8 +39,6 @@ footer .refresh, .favorite, .size, .color, .buy  {
   width: 20%;
   border: 1px solid #5ea5d8;
   padding: 15px 24px;
-
-
 }
 
  p {
@@ -124,7 +122,6 @@ section p .price {
 }
 
 .size-box {
-  opacity: 0.0;
   width: 85px;
   height: 180px;
   position: absolute;
@@ -254,6 +251,42 @@ section p .price {
 }
 
 .shopping-cart {
-  position: relative;;
-  top: 100px;
+  position: absolute;
+  top: 500px;
+}
+
+#sold1 {
+  width: 65px;
+  height: 55px;
+  background-color: gray;
+  position: absolute;
+  left: 278px;
+  opacity: 0.4;
+  display: none;
+  color: white;
+  text-align: center;
+}
+
+#sold2 {
+  width: 65px;
+  height: 55px;
+  background-color: gray;
+  position: absolute;
+  left: 278px;
+  opacity: 0.4;
+  display: none;
+  color: white;
+  text-align: center;
+}
+
+#sold3 {
+  width: 65px;
+  height: 55px;
+  background-color: gray;
+  position: absolute;
+  left: 278px;
+  opacity: 0.4;
+  display: none;
+  color: white;
+  text-align: center;
 }
