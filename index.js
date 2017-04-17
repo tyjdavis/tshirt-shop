@@ -1,169 +1,40 @@
-
 //Size Selector
 
-function clickSizeXL(event) {
-  event.target.parentElement.parentElement.lastElementChild.textContent= "XL";
-}
+$('.XL').on('click', function () {$(this).closest('.size').find('.sizeText').text('XL')});
 
-let sizeXL = document.querySelectorAll('.XL');
-for (i=0; i < sizeXL.length; i++) {
-  sizeXL[i].addEventListener('click', clickSizeXL);
-}
+$('.L').on('click', function () {$(this).closest('.size').find('.sizeText').text('L')});
 
-//another way to do it instead of for loop
+$('.M').on('click', function () {$(this).closest('.size').find('.sizeText').text('M')});
 
-/*  sizeXL[0].addEventListener('click', clickSizeXL);
-    sizeXL[1].addEventListener('click', clickSizeXL);
-    sizeXL[2].addEventListener('click', clickSizeXL); */
-
-
-function clickSizeL(event) {
-  event.target.parentElement.parentElement.lastElementChild.textContent= "L";
-}
-  let sizeL = document.querySelectorAll('.L');
-  for (i = 0; i < sizeL.length; i++) {
-    sizeL[i].addEventListener('click', clickSizeL);
-  }
-
-
-function clickSizeM(event) {
-  event.target.parentElement.parentElement.lastElementChild.textContent= "M";
-}
-  let sizeM = document.querySelectorAll('.M');
-  for (i = 0; i < sizeM.length; i++) {
-  sizeM[i].addEventListener('click', clickSizeM);
-  }
-
-
-function clickSizeS(event) {
-  event.target.parentElement.parentElement.lastElementChild.textContent= "S";
-}
-  let sizeS = document.querySelectorAll('.S');
-  for (i = 0; i < sizeS.length; i++) {
-  sizeS[i].addEventListener('click', clickSizeS);
-  }
-
+$('.S').on('click', function () {$(this).closest('.size').find('.sizeText').text('S')});
 
 
 //Color Selector
 
-//Blue Color
 
-function clickColorBlue1() {
-  let myImage = document.querySelector('img.first');
-  myImage.src = "shirts/blue-front.png";
-  let colorBox = document.querySelector('#color1');
-  colorBox.style.backgroundColor = "#80bbe5";
-  }
-
-function clickColorBlue2() {
-  let myImage = document.querySelector('img.second');
-  myImage.src = "shirts/blue-front.png";
-  let colorBox = document.querySelector('#color2');
-  colorBox.style.backgroundColor = "#80bbe5";
-  }
-
-function clickColorBlue3() {
-  let myImage = document.querySelector('img.third');
-  myImage.src = "shirts/blue-front.png";
-  let colorBox = document.querySelector('#color3');
-  colorBox.style.backgroundColor = "#80bbe5";
-  }
-
-let colorBlue = document.querySelectorAll('.blue-option');
-colorBlue[0].addEventListener('click', clickColorBlue1);
-colorBlue[1].addEventListener('click', clickColorBlue2);
-colorBlue[2].addEventListener('click', clickColorBlue3);
-
+$('.blue-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/blue-front.png');
+$(this).parent().next().css('background-color', '#80bbe5')});
 
 
 //Pink Color
 
-function clickColorPink1() {
-  let myImage = document.querySelector('img.first');
-  myImage.src = "shirts/pink-front.png";
-  let colorBox = document.querySelector('#color1');
-  colorBox.style.backgroundColor = "#e276a7";
-  }
 
-function clickColorPink2() {
-  let myImage = document.querySelector('img.second');
-  myImage.src = "shirts/pink-front.png";
-  let colorBox = document.querySelector('#color2');
-  colorBox.style.backgroundColor = "#e276a7";
-  }
-
-function clickColorPink3() {
-  let myImage = document.querySelector('img.third');
-  myImage.src = "shirts/pink-front.png";
-  let colorBox = document.querySelector('#color3');
-  colorBox.style.backgroundColor = "#e276a7";
-  }
-
-let colorPink = document.querySelectorAll('.pink-option');
-colorPink[0].addEventListener('click', clickColorPink1);
-colorPink[1].addEventListener('click', clickColorPink2);
-colorPink[2].addEventListener('click', clickColorPink3);
-
+$('.pink-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/pink-front.png');
+$(this).parent().next().css('background-color', '#e276a7')});
 
 
 //Orange Color
 
-function clickColorOrange1() {
-  let myImage = document.querySelector('img.first');
-  myImage.src = "shirts/yellow-front.png";
-  let colorBox = document.querySelector('#color1');
-  colorBox.style.backgroundColor = "#e4b177";
-  }
 
-function clickColorOrange2() {
-  let myImage = document.querySelector('img.second');
-  myImage.src = "shirts/yellow-front.png";
-  let colorBox = document.querySelector('#color2');
-  colorBox.style.backgroundColor = "#e4b177";
-  }
-
-function clickColorOrange3() {
-  let myImage = document.querySelector('img.third');
-  myImage.src = "shirts/yellow-front.png";
-  let colorBox = document.querySelector('#color3');
-  colorBox.style.backgroundColor = "#e4b177";
-  }
-
-let colorOrange = document.querySelectorAll('.orange-option');
-colorOrange[0].addEventListener('click', clickColorOrange1);
-colorOrange[1].addEventListener('click', clickColorOrange2);
-colorOrange[2].addEventListener('click', clickColorOrange3);
-
+$('.orange-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/yellow-front.png');
+$(this).parent().next().css('background-color', '#e4b177')});
 
 
 //Green Color
 
-function clickColorGreen1() {
-  let myImage = document.querySelector('img.first');
-  myImage.src = "shirts/green-front.png";
-  let colorBox = document.querySelector('#color1');
-  colorBox.style.backgroundColor = "#8bb992";
-  }
 
-function clickColorGreen2() {
-  let myImage = document.querySelector('img.second');
-  myImage.src = "shirts/green-front.png";
-  let colorBox = document.querySelector('#color2');
-  colorBox.style.backgroundColor = "#8bb992";
-  }
-
-function clickColorGreen3() {
-  let myImage = document.querySelector('img.third');
-  myImage.src = "shirts/green-front.png";
-  let colorBox = document.querySelector('#color3');
-  colorBox.style.backgroundColor = "#8bb992";
-  }
-
-let colorGreen = document.querySelectorAll('.green-option');
-colorGreen[0].addEventListener('click', clickColorGreen1);
-colorGreen[1].addEventListener('click', clickColorGreen2);
-colorGreen[2].addEventListener('click', clickColorGreen3);
+$('.green-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/green-front.png');
+$(this).parent().next().css('background-color', '#8bb992')});
 
 
 
