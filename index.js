@@ -1,53 +1,17 @@
 
 //Size Selector
 
-function clickSizeXL(event) {
-  event.target.parentElement.parentElement.lastElementChild.textContent= "XL";
-}
+let sizeXL = $('.XL').on('click', function (e) {$(this).closest('.size').find('.test').text('XL')});
 
-let sizeXL = document.querySelectorAll('.XL');
-for (i=0; i < sizeXL.length; i++) {
-  sizeXL[i].addEventListener('click', clickSizeXL);
-}
+let sizeL = $('.L').on('click', function (e) {$(this).closest('.size').find('.test').text('L')});
 
-//another way to do it instead of for loop
+let sizeM = $('.M').on('click', function (e) {$(this).closest('.size').find('.test').text('M')});
 
-/*  sizeXL[0].addEventListener('click', clickSizeXL);
-    sizeXL[1].addEventListener('click', clickSizeXL);
-    sizeXL[2].addEventListener('click', clickSizeXL); */
-
-
-function clickSizeL(event) {
-  event.target.parentElement.parentElement.lastElementChild.textContent= "L";
-}
-  let sizeL = document.querySelectorAll('.L');
-  for (i = 0; i < sizeL.length; i++) {
-    sizeL[i].addEventListener('click', clickSizeL);
-  }
-
-
-function clickSizeM(event) {
-  event.target.parentElement.parentElement.lastElementChild.textContent= "M";
-}
-  let sizeM = document.querySelectorAll('.M');
-  for (i = 0; i < sizeM.length; i++) {
-  sizeM[i].addEventListener('click', clickSizeM);
-  }
-
-
-function clickSizeS(event) {
-  event.target.parentElement.parentElement.lastElementChild.textContent= "S";
-}
-  let sizeS = document.querySelectorAll('.S');
-  for (i = 0; i < sizeS.length; i++) {
-  sizeS[i].addEventListener('click', clickSizeS);
-  }
-
+let sizeS = $('.S').on('click', function (e) {$(this).closest('.size').find('.test').text('S')});
 
 
 //Color Selector
 
-//Blue Color
 
 function clickColorBlue1() {
   let myImage = document.querySelector('img.first');
