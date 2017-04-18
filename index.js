@@ -38,7 +38,7 @@ $(this).parent().next().css('background-color', '#8bb992')});
 
 
 
-//Shopping Cart
+//Adding Items to Shopping Cart
 
 $('.buy').on('click', function() {
   let $ul = $('.cart');
@@ -74,23 +74,31 @@ $('.buy').on('click', function() {
 
 
 
-//Updating price in shopping cart
+//Updating price in Shopping Cart
 
-function cartAdd(event) {
-  let placeHolder = document.getElementById("total").textContent;
-  let totalNumber = parseInt(placeHolder);
-  let placeHolder1 = event.target.parentElement.nextElementSibling.querySelector(".price").textContent;
-  let shirtCost = parseInt(placeHolder1);
-  totalNumber = totalNumber + shirtCost;
-  total.textContent = totalNumber;
+
+$('.buy').on('click', function () {
+  let $shirtPrice = parseInt($(this).parent().next().find('.price').text());
+  let $cartPrice = parseInt($("#total").text());
+  $cartPrice += $shirtPrice;
+  total.textContent = $cartPrice;
   cartLimit();
-}
+})
 
+// function cartAdd(event) {
+//   let placeHolder = document.getElementById("total").textContent;
+//   let totalNumber = parseInt(placeHolder);
+//   let placeHolder1 = event.target.parentElement.nextElementSibling.querySelector(".price").textContent;
+//   let shirtCost = parseInt(placeHolder1);
+//   totalNumber = totalNumber + shirtCost;
+//   total.textContent = totalNumber;
+//   cartLimit();
+// }
 
-let cartTotal = document.querySelectorAll(".buy");
-for (i = 0; i < cartTotal.length; i++) {
-cartTotal[i].addEventListener('click', cartAdd);
-}
+// let cartTotal = document.querySelectorAll(".buy");
+// for (i = 0; i < cartTotal.length; i++) {
+// cartTotal[i].addEventListener('click', cartAdd);
+// }
 
 
 
