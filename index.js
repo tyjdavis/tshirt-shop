@@ -38,57 +38,71 @@ $(this).parent().next().css('background-color', '#8bb992')});
 
 
 
-//Shopping Cart
+//Adding Items to Shopping Cart
 
-function buy1() {
-  let ul = document.querySelector(".cart");
-  let li = document.createElement("li");
-  li.textContent = "Save my Trees $29";
-  ul.appendChild(li);
-}
-
-function buy2() {
-  let ul = document.querySelector(".cart");
-  let li = document.createElement("li");
-  li.textContent = "Nature Lover $19";
-  ul.appendChild(li);
-}
-
-function buy3() {
-  let ul = document.querySelector(".cart");
-  let li = document.createElement("li");
-  li.textContent = "Forrest Walk $39";
-  ul.appendChild(li);
-}
-
-let buyShirt = document.querySelectorAll(".buy");
-buyShirt[0].addEventListener('click', buy1);
-buyShirt[1].addEventListener('click', buy2);
-buyShirt[2].addEventListener('click', buy3);
+$('.buy').on('click', function() {
+  let $ul = $('.cart');
+  let $li = $(this).parent().next().text();
+  $ul.append($li)});
 
 
+// function buy1() {
+//   let ul = document.querySelector(".cart");
+//   let li = document.createElement("li");
+//   li.textContent = "Save my Trees $29";
+//   ul.appendChild(li);
+// }
+//
+// function buy2() {
+//   let ul = document.querySelector(".cart");
+//   let li = document.createElement("li");
+//   li.textContent = "Nature Lover $19";
+//   ul.appendChild(li);
+// }
+//
+// function buy3() {
+//   let ul = document.querySelector(".cart");
+//   let li = document.createElement("li");
+//   li.textContent = "Forrest Walk $39";
+//   ul.appendChild(li);
+// }
+//
+// let buyShirt = document.querySelectorAll(".buy");
+// buyShirt[0].addEventListener('click', buy1);
+// buyShirt[1].addEventListener('click', buy2);
+// buyShirt[2].addEventListener('click', buy3);
 
-//Updating price in shopping cart
 
-function cartAdd(event) {
-  let placeHolder = document.getElementById("total").textContent;
-  let totalNumber = parseInt(placeHolder);
-  let placeHolder1 = event.target.parentElement.nextElementSibling.querySelector(".price").textContent;
-  let shirtCost = parseInt(placeHolder1);
-  totalNumber = totalNumber + shirtCost;
-  total.textContent = totalNumber;
+
+//Updating price in Shopping Cart
+
+
+$('.buy').on('click', function () {
+  let $shirtPrice = parseInt($(this).parent().next().find('.price').text());
+  let $cartPrice = parseInt($("#total").text());
+  $cartPrice += $shirtPrice;
+  total.textContent = $cartPrice;
   cartLimit();
-}
+})
+
+// function cartAdd(event) {
+//   let placeHolder = document.getElementById("total").textContent;
+//   let totalNumber = parseInt(placeHolder);
+//   let placeHolder1 = event.target.parentElement.nextElementSibling.querySelector(".price").textContent;
+//   let shirtCost = parseInt(placeHolder1);
+//   totalNumber = totalNumber + shirtCost;
+//   total.textContent = totalNumber;
+//   cartLimit();
+// }
+
+// let cartTotal = document.querySelectorAll(".buy");
+// for (i = 0; i < cartTotal.length; i++) {
+// cartTotal[i].addEventListener('click', cartAdd);
+// }
 
 
-let cartTotal = document.querySelectorAll(".buy");
-for (i = 0; i < cartTotal.length; i++) {
-cartTotal[i].addEventListener('click', cartAdd);
-}
 
-
-
-//Limit of 5 of each individual shirt
+//Limit of 8 of each individual shirt
 
 let saveShirt = 0;
 let natureShirt = 0;
