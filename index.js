@@ -11,31 +11,23 @@ $('.S').on('click', function () {$(this).closest('.size').find('.sizeText').text
 
 //Color Selector
 
-
 $('.blue-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/blue-front.png');
 $(this).parent().next().css('background-color', '#80bbe5')});
 
-
 //Pink Color
-
 
 $('.pink-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/pink-front.png');
 $(this).parent().next().css('background-color', '#e276a7')});
 
-
 //Orange Color
-
 
 $('.orange-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/yellow-front.png');
 $(this).parent().next().css('background-color', '#e4b177')});
 
-
 //Green Color
-
 
 $('.green-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/green-front.png');
 $(this).parent().next().css('background-color', '#8bb992')});
-
 
 
 //Adding Items to Shopping Cart
@@ -44,34 +36,6 @@ $('.buy').on('click', function() {
   let $ul = $('.cart');
   let $li = $(this).parent().next().text();
   $ul.append($li)});
-
-
-// function buy1() {
-//   let ul = document.querySelector(".cart");
-//   let li = document.createElement("li");
-//   li.textContent = "Save my Trees $29";
-//   ul.appendChild(li);
-// }
-//
-// function buy2() {
-//   let ul = document.querySelector(".cart");
-//   let li = document.createElement("li");
-//   li.textContent = "Nature Lover $19";
-//   ul.appendChild(li);
-// }
-//
-// function buy3() {
-//   let ul = document.querySelector(".cart");
-//   let li = document.createElement("li");
-//   li.textContent = "Forrest Walk $39";
-//   ul.appendChild(li);
-// }
-//
-// let buyShirt = document.querySelectorAll(".buy");
-// buyShirt[0].addEventListener('click', buy1);
-// buyShirt[1].addEventListener('click', buy2);
-// buyShirt[2].addEventListener('click', buy3);
-
 
 
 //Updating price in Shopping Cart
@@ -84,22 +48,6 @@ $('.buy').on('click', function () {
   total.textContent = $cartPrice;
   cartLimit();
 })
-
-// function cartAdd(event) {
-//   let placeHolder = document.getElementById("total").textContent;
-//   let totalNumber = parseInt(placeHolder);
-//   let placeHolder1 = event.target.parentElement.nextElementSibling.querySelector(".price").textContent;
-//   let shirtCost = parseInt(placeHolder1);
-//   totalNumber = totalNumber + shirtCost;
-//   total.textContent = totalNumber;
-//   cartLimit();
-// }
-
-// let cartTotal = document.querySelectorAll(".buy");
-// for (i = 0; i < cartTotal.length; i++) {
-// cartTotal[i].addEventListener('click', cartAdd);
-// }
-
 
 
 //Limit of 8 of each individual shirt
