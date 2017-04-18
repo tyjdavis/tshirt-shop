@@ -40,31 +40,37 @@ $(this).parent().next().css('background-color', '#8bb992')});
 
 //Shopping Cart
 
-function buy1() {
-  let ul = document.querySelector(".cart");
-  let li = document.createElement("li");
-  li.textContent = "Save my Trees $29";
-  ul.appendChild(li);
-}
+$('.buy').on('click', function() {
+  let $ul = $('.cart');
+  let $li = $(this).parent().next().text();
+  $ul.append($li)});
 
-function buy2() {
-  let ul = document.querySelector(".cart");
-  let li = document.createElement("li");
-  li.textContent = "Nature Lover $19";
-  ul.appendChild(li);
-}
 
-function buy3() {
-  let ul = document.querySelector(".cart");
-  let li = document.createElement("li");
-  li.textContent = "Forrest Walk $39";
-  ul.appendChild(li);
-}
-
-let buyShirt = document.querySelectorAll(".buy");
-buyShirt[0].addEventListener('click', buy1);
-buyShirt[1].addEventListener('click', buy2);
-buyShirt[2].addEventListener('click', buy3);
+// function buy1() {
+//   let ul = document.querySelector(".cart");
+//   let li = document.createElement("li");
+//   li.textContent = "Save my Trees $29";
+//   ul.appendChild(li);
+// }
+//
+// function buy2() {
+//   let ul = document.querySelector(".cart");
+//   let li = document.createElement("li");
+//   li.textContent = "Nature Lover $19";
+//   ul.appendChild(li);
+// }
+//
+// function buy3() {
+//   let ul = document.querySelector(".cart");
+//   let li = document.createElement("li");
+//   li.textContent = "Forrest Walk $39";
+//   ul.appendChild(li);
+// }
+//
+// let buyShirt = document.querySelectorAll(".buy");
+// buyShirt[0].addEventListener('click', buy1);
+// buyShirt[1].addEventListener('click', buy2);
+// buyShirt[2].addEventListener('click', buy3);
 
 
 
@@ -88,7 +94,7 @@ cartTotal[i].addEventListener('click', cartAdd);
 
 
 
-//Limit of 5 of each individual shirt
+//Limit of 8 of each individual shirt
 
 let saveShirt = 0;
 let natureShirt = 0;
