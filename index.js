@@ -34,7 +34,7 @@ $(this).parent().next().css('background-color', '#8bb992')});
 
 $('.buy').on('click', function() {
   let $ul = $('.cart');
-  let $li = $(this).parent().next().text();
+  let $li = `<li>${$(this).parent().next().text()}</li>`
   $ul.append($li)});
 
 
@@ -44,10 +44,12 @@ $('.buy').on('click', function() {
 $('.buy').on('click', function () {
   let $shirtPrice = parseInt($(this).parent().next().find('.price').text());
   let $cartPrice = parseInt($("#total").text());
+  let $test = $('#total');
   $cartPrice += $shirtPrice;
-  total.textContent = $cartPrice;
+  $test.text($cartPrice);
   cartLimit();
 })
+
 
 
 //Limit of 8 of each individual shirt
